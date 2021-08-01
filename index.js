@@ -99,10 +99,17 @@ console.log(getWeekDayTernary(0))
 // Q7. WAF to search an element in the array?
 
 const includesArray = (arr, num) => {
-    return arr.includes(num)? 'Present' : 'Not Present';
+    let res = 'Not Present';
+    for(let i=0; i<arr.length; i++) {
+        if(arr[i] === num) {
+            res = 'Present'
+            break;
+        }
+    }
+    return res
 }
 
-console.log(includesArray([1, 3], 4));
+console.log(includesArray([1, 3], 3));
 
 // Q8. WAF to find the max in the array?
 
