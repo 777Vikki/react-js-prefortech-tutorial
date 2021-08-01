@@ -247,6 +247,9 @@ const isPalindrome1 = (num) => {
 console.log(isPalindrome1(737))
 
 // Q15. WAF to check if the string entered is the palindrome string or not.
+
+// Solution 1
+
 const isStringPalindrome = (str) => {
     let revStr = '';
     for(let i=str.length-1; i>=0; i--) {
@@ -260,6 +263,21 @@ const isStringPalindrome = (str) => {
 }
 
 console.log(isStringPalindrome('VIV'))
+
+// Solution 2
+
+const isPalindrome1 = (str) => {
+    let res = 'Palindrome';
+    for (let i = 0; i < str.length - 1; i++) {
+        if (str[i] !== str[str.length - 1 - i]) {
+            res = 'Not Palindrome';
+            break
+        }
+    }
+    return res;
+}
+
+console.log(isPalindrome1('737'))
 
 // Q16. WAF to count the number of words in the string.
 
