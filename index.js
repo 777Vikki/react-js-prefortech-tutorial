@@ -214,21 +214,37 @@ console.log(removeDuplicate2('VIVEK'))
 
 // Q14. WAF to check if the number is a palindrome or not.
 
+// Solution 1
 const isPalindrome = (num) => {
-    let revNumber = '';
+    let revNumber = 0;
     let number = num;
     while(number > 0) {
-        revNumber = revNumber + num%10;
+        revNumber = revNumber*10 + number%10;
         number = Math.floor(number/10);
     }
-    if(num === Number(revNumber)) {
+    if(num === revNumber) {
         return 'Palindrome'
     } else {
         return 'Not Palindrome'
     }
 }
 
-console.log(isPalindrome(55));
+console.log(isPalindrome(5135));
+
+// Solution 2
+const isPalindrome1 = (num) => {
+    let res = 'Palindrome';
+    num = num ? num.toString() : '';
+    for (let i = 0; i < num.length - 1; i++) {
+        if (num[i] !== num[num.length - 1 - i]) {
+            res = 'Not Palindrome';
+            break
+        }
+    }
+    return res;
+}
+
+console.log(isPalindrome1(737))
 
 // Q15. WAF to check if the string entered is the palindrome string or not.
 const isStringPalindrome = (str) => {
