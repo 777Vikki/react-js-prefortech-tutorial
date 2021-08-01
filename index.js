@@ -21,16 +21,18 @@ console.log(isEven(2));
 // Q3. Write a function it check if the number is prime or not.
 
 const isPrime = (num) => {
-    let isPrimeNumber = num + ' is Not a Prime';
+    let isPrimeNumber = num + ' is a Prime';
     for(let i=2; i<num; i++) {
-        if(num % i !== 0) {
-            isPrimeNumber = num + ' is Prime';
+        if(num % i === 0) {
+            isPrimeNumber = num + ' is not a Prime';
+            break;
         }
     }
     return isPrimeNumber;
 }
 
-console.log(isPrime(5))
+console.log(isPrime(14))
+
 
 // Q4. Write a function ‘weekDay’ that takes n as the input and returns the day associated to it. If n<1 or n>7 then return invalid input. Using switch case only.
 const weekDaySwitch = (num) => {
