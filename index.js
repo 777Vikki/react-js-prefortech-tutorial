@@ -174,7 +174,7 @@ console.log(reverseString('Vivek Kumar'));
 
 // Q13. WAF to remove the duplicate chars in the string
 
-
+// Solution 1
 const removeDuplicate = (str) => {
     let res = '';
     for(let i=0; i<str.length-1; i++) {
@@ -186,6 +186,21 @@ const removeDuplicate = (str) => {
 }
 
 console.log(removeDuplicate('VIVEK'));
+
+// Solution 2
+
+const removeDuplicate2 = (str) => {
+    let obj = {};
+    let rev = '';
+    for(let i=0; i<str.length; i++) {
+        if(!obj.hasOwnProperty(str[i])) {
+            rev += str[i];
+            obj[str[i]] = obj[i];
+        }
+    }
+    return rev;
+}
+console.log(removeDuplicate1('VIVEK'))
 
 
 // Q14. WAF to check if the number is a palindrome or not.
