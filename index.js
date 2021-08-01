@@ -200,7 +200,7 @@ const removeDuplicate2 = (str) => {
     }
     return rev;
 }
-console.log(removeDuplicate1('VIVEK'))
+console.log(removeDuplicate2('VIVEK'))
 
 
 // Q14. WAF to check if the number is a palindrome or not.
