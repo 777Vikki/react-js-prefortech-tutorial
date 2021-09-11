@@ -1,0 +1,42 @@
+.content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-size: 6.5rem;
+}
+.container{
+    border: solid;
+    padding: 100px;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+}
+.innerContent{
+    display: block;
+    margin: 200px 0px 0px -16px;
+}
+#reset{
+    float: right;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 12%;
+    cursor: pointer;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+#stop{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 200px;
+}
+#start{
+    cursor: pointer;
+}
