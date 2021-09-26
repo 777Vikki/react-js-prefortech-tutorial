@@ -1,0 +1,16 @@
+.Content {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Counter-clz {
+  font-size: 3.5rem;
+}
+
+.Counter-container {
+  margin-top: 20px
+}
