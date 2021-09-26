@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+    color: rgb(37 128 0);
+}
+
+.cursor {
+    font-weight: 900;
+    color: white;
+}
