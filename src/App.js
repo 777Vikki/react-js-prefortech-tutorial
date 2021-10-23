@@ -3,7 +3,7 @@ import Clock from "./components/Clock";
 import { useState } from 'react';
 
 function App() {
-  const [timerTitle, updateTitle] = useState('Stop Watch');
+  const [timerTitle, updateTitle] = useState('Clock');
   return (
     <>
       <div className="container border border-dark mt-5">
