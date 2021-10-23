@@ -1,0 +1,17 @@
+.stopwatch-circle {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.stopwatch-circle .rounded-circle {
+    width: 300px;
+    height: 300px;
+}
+.timer-clz {
+    margin-top: 120px;
+}
+
+.timer-btn {
+    margin-top: 60px;
+    cursor: pointer;
+}
