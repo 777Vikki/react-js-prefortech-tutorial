@@ -35,7 +35,7 @@ export default function Stopwatch() {
         <div>
             <div className="stopwatch-circle my-3">
                 <div className="position-absolute end-0 top-0">
-                    <button type="button" className="btn btn-outline-dark btn-lg" onClick={resetStopwatch}>Reset</button>
+                    <button type="button" className="btn btn-outline-dark btn-lg" disabled={timer === 0} onClick={resetStopwatch}>Reset</button>
               </div>
                 <div className="border border-dark rounded-circle">
                     <div className="timer-clz">
