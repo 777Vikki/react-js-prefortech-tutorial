@@ -5,12 +5,12 @@ export default function Stopwatch() {
     const [isPaused, updatePaused] = useState(false);
     const [timer, setTimer] = useState(0);
     const countRef = useRef(null);
-    
+    let conter_stopwatch;
     const stopwatchHandler = () => {
         if(isPaused) {
-            clearInterval(countRef.current)
+            clearInterval(conter_stopwatch)
         } else {
-            countRef.current = setInterval(() => {
+            conter_stopwatch = setInterval(() => {
                 setTimer((timer) => timer + 1)
             }, 10)
         }
@@ -18,7 +18,7 @@ export default function Stopwatch() {
     }
 
     const resetStopwatch = () => {
-        clearInterval(countRef.current);
+        clearInterval(conter_stopwatch);
         updatePaused(false);
         setTimer(0)
     }
