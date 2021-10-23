@@ -6,7 +6,7 @@ export default function Clock() {
         const time = new Date();
         const hours =  time.getHours() >= 12? time.getHours() - 12 : time.getHours();
         const minutes = time.getMinutes();
-        return `${hours <= 9? '0'+hours:hours}:${minutes<=9? '0'+minutes : minutes} ${time.getHours() >= 12? 'PM' : 'AM'}`;
+        return `${('0' + hours).slice(-2)}:${('0' + minutes).slice(-2)} ${time.getHours() >= 12? 'PM' : 'AM'}`;
     }
     const [timer, updateTimer] = useState(getTimer);
     setInterval(() => {
